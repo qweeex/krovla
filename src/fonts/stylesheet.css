@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'a_FuturaRound';
+    src: url('AFuturaRound.eot');
+    src: url('AFuturaRound.eot?#iefix') format('embedded-opentype'),
+        url('AFuturaRound.woff2') format('woff2'),
+        url('AFuturaRound.woff') format('woff'),
+        url('AFuturaRound.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

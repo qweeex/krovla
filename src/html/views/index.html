@@ -34,6 +34,30 @@
       <area class="homeMap home-bottom" alt="Забор" title="Забор" href="" coords="299,633,579,621,942,628,1049,626,1176,632,1210,626,1275,625,1281,834,3,837,1,626" shape="poly">
     </map>
   </div>
+  <div class="main__sh" id="search">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+            <div class="main__sh-form">
+              <div class="form-wrapper">
+                <div class="form-icon">
+                  <img src="img/glass-white.svg" alt="">
+                </div>
+                <div class="form-input">
+                  <input type="text" placeholder="Поиск">
+                </div>
+                <div class="form-btn">
+                  <button>Найти</button>
+                </div>
+              </div>
+              <div class="form-close">
+                <img src="img/close.svg" alt="">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="row d-none d-sm-flex main-header">
       <div class="col-xl-auto">
@@ -41,8 +65,8 @@
           <a href=""><img src="img/logo.png" alt=""></a>
         </div>
       </div>
-      <div class="col-xl-5">
-        <div class="main__nav">
+      <div class="main-hidden col-xl-5">
+        <div class="main__nav ">
           <nav>
             <a href="" class="main__nav-link">Каталог</a>
             <a href="" class="main__nav-link">Услуги</a>
@@ -52,14 +76,14 @@
           </nav>
         </div>
       </div>
-      <div class="col-xl-auto ml-auto">
+      <div class="main-hidden col-xl-auto ml-auto">
         <div class="main__search">
           <div class="main__search-btn">
             <img src="img/magnifying-glass.svg" alt="">
           </div>
         </div>
       </div>
-      <div class="col-xl-auto">
+      <div class="main-hidden col-xl-auto">
         <div class="main__phone">
           <a href="">
             <div class="main__phone-block">
@@ -74,7 +98,7 @@
           </a>
         </div>
       </div>
-      <div class="col-xl-auto">
+      <div class="main-hidden col-xl-auto">
         <div class="main__cart">
           <div class="main__cart-button">
             <div class="button-price">
@@ -85,12 +109,63 @@
             </div>
           </div>
         </div>
+        <div class="main__cartContent d-none">
+          <div class="cartContent__close">
+            <img src="img/close.svg" class="cartContent__close-btn" alt="">
+          </div>
+          <div class="cartContent__wrapper">
+            <div class="cartContent__item">
+              <div class="item-img">
+                <a href=""><img src="img/image4.png" alt=""></a>
+              </div>
+              <div class="item-content">
+                <p class="item-content__title">Профилированный лист Н-114х750 (ОЦ-01-БЦ-1)</p>
+                <p class="item-content__price">624,75 ₽ / м<sup>2</sup></p>
+              </div>
+              <div class="item-count">
+                <div class="count-min">-</div>
+                <div class="count-num">12</div>
+                <div class="count-max">+</div>
+              </div>
+              <div class="item-delete">
+                <img src="img/cartDelete.svg" alt="">
+              </div>
+            </div>
+            <div class="cartContent__item">
+              <div class="item-img">
+                <a href=""><img src="img/image4.png" alt=""></a>
+              </div>
+              <div class="item-content">
+                <p class="item-content__title">Профилированный лист Н-114х750 (ОЦ-01-БЦ-1)</p>
+                <p class="item-content__price">624,75 ₽ / м2</p>
+              </div>
+              <div class="item-count">
+                <div class="count-min">-</div>
+                <div class="count-num">12</div>
+                <div class="count-max">+</div>
+              </div>
+              <div class="item-delete">
+                <img src="img/cartDelete.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="cartContent__bottom">
+            <div class="bottom-price">
+              <p>Итого: 11 319,15 ₽</p>
+            </div>
+            <div class="bottom-btn">
+              <a href="">
+                <button>Оформить заказ</button>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row d-flex d-sm-none main-header__mob">
       <div class="col-6">
         <div class="main__menu-mob">
-          <img src="img/menu.png" alt="">
+          <img src="img/menu.png" class="main__menu-mob-btn" alt="">
         </div>
         <div class="main__logo-mob">
           <img src="img/logo.png" width="63" alt="">
@@ -146,6 +221,25 @@
       </div>
     </div>
   </div>
+  <div class="mob-menu">
+    <div class="mob-menu__close">
+      <img src="img/mobClose.png" class="mob-menu__close-btn" alt="">
+    </div>
+    <div class="mob-menu__content">
+      <div class="content-phone">
+        <a href="tel:88453488797">8 845 348 87 97</a>
+      </div>
+      <div class="content-menu">
+        <nav>
+          <a href="">каталог</a>
+          <a href="">услуги</a>
+          <a href="">акции</a>
+          <a href="">Покупателям</a>
+          <a href="">Комплекс</a>
+        </nav>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="catalog">
   <div class="container">
@@ -196,20 +290,20 @@
         </div>
         <div class="catalog__menu catalog__menu-mob">
           <ul class="menu-list">
-            <li>
-              <a href="" class="catalog__menu-link">Кровля</a>
+            <li data-href="krovla" class="cat-mob-link link-show">
+              <a href="#" class="catalog__menu-link">Кровля</a>
               <div class="icon">
                 <img src="img/catalog/krovla.png" alt="">
               </div>
             </li>
-            <li>
-              <a href="" class="catalog__menu-link">Фасады</a>
+            <li data-href="fasad" class="cat-mob-link">
+              <a href="#" class="catalog__menu-link">Фасады</a>
               <div class="icon">
                 <img src="img/catalog/fasad.png" alt="">
               </div>
             </li>
-            <li>
-              <a href="" class="catalog__menu-link">Заборы</a>
+            <li data-href="zabor" class="cat-mob-link">
+              <a href="#" class="catalog__menu-link">Заборы</a>
               <div class="icon">
                 <img src="img/catalog/zabor.png" alt="">
               </div>
@@ -222,7 +316,7 @@
       </div>
     </div>
     <div class="row catalog__row">
-      <div class="col-xl-4 col-12 catalog__col catalog__active">
+      <div data-block="krovla" class="col-xl-4 col-12 catalog__col catalog__active">
         <div class="catalog__block">
           <div class="block__img">
             <svg id="block__img-1" width="66" height="23" viewBox="0 0 66 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -272,7 +366,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-4 col-12 catalog__col">
+      <div data-block="fasad" class="col-xl-4 col-12 catalog__col">
         <div class="catalog__block">
           <div class="block__img">
             <svg id="block__img-2" width="44" height="42" viewBox="0 0 44 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -310,7 +404,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-4 col-12 catalog__col">
+      <div data-block="zabor" class="col-xl-4 col-12 catalog__col">
         <div class="catalog__block">
           <div class="block__img">
             <svg id="block__img-3" width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -790,7 +884,7 @@
               </div>
             </div>
           </div>
-          <div class="about__home-callback">
+          <div class="about__home-callback d-none d-sm-block">
             <div class="callback-title">
               <p>Остались вопросы?</p>
             </div>
@@ -798,6 +892,17 @@
               <p>заполните форму и наш <br>менеджер свяжется с Вами</p>
               <img src="img/arrowLink.png" alt="">
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 order-10 d-sm-none">
+        <div class="about__home-callback">
+          <div class="callback-title">
+            <p>Остались вопросы?</p>
+          </div>
+          <div class="callback-desc">
+            <p>заполните форму и наш <br>менеджер свяжется с Вами</p>
+            <img src="img/arrowLink.png" alt="">
           </div>
         </div>
       </div>
@@ -855,6 +960,8 @@
     </div>
   </div>
 </div>
-
+<div class="up" style="opacity: 0">
+  <img src="img/up.png" alt="">
+</div>
 </body>
 </html>

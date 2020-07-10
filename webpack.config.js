@@ -6,7 +6,6 @@ const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-
 function generateHtmlPlugins(templateDir) {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
   return templateFiles.map((item) => {
@@ -27,6 +26,9 @@ const config = {
   entry: ["./src/js/index.js", "./src/scss/style.scss"],
   output: {
     filename: "./js/bundle.js",
+  },
+  devServer: {
+    hot: true
   },
   devtool: "source-map",
   mode: "production",
@@ -85,7 +87,7 @@ const config = {
       {
         test: /\.html$/,
         include: path.resolve(__dirname, "src/html/includes"),
-        use: ["raw-loader"],
+        use: "raw-loader",
       },
     ],
   },

@@ -9,16 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.bundle.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <!--Plugin CSS file with desired skin-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="js/jquery.imagemapster.js"></script>
   <!--Plugin JavaScript file-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
   <script src="js/home.js" defer></script>
   <script src="js/index.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
 
@@ -68,11 +69,11 @@
       <div class="main-hidden col-xl-5">
         <div class="main__nav ">
           <nav>
-            <a href="" class="main__nav-link">Каталог</a>
-            <a href="" class="main__nav-link">Услуги</a>
-            <a href="" class="main__nav-link">Акции</a>
-            <a href="" class="main__nav-link">Покупателям</a>
-            <a href="" class="main__nav-link">Комплекс</a>
+            <a href="catalog.html" class="main__nav-link">Каталог</a>
+            <a href="services.html" class="main__nav-link">Услуги</a>
+            <a href="sale.html" class="main__nav-link">Акции</a>
+            <a href="text.html" class="main__nav-link">Покупателям</a>
+            <a href="text.html" class="main__nav-link">Комплекс</a>
           </nav>
         </div>
       </div>
@@ -221,25 +222,7 @@
       </div>
     </div>
   </div>
-  <div class="mob-menu">
-    <div class="mob-menu__close">
-      <img src="img/mobClose.png" class="mob-menu__close-btn" alt="">
-    </div>
-    <div class="mob-menu__content">
-      <div class="content-phone">
-        <a href="tel:88453488797">8 845 348 87 97</a>
-      </div>
-      <div class="content-menu">
-        <nav>
-          <a href="">каталог</a>
-          <a href="">услуги</a>
-          <a href="">акции</a>
-          <a href="">Покупателям</a>
-          <a href="">Комплекс</a>
-        </nav>
-      </div>
-    </div>
-  </div>
+  <%= _.template(require('./../includes/MobileMenu.html').default)(data) %>
 </div>
 <div class="catalog">
   <div class="container">
@@ -909,59 +892,6 @@
     </div>
   </div>
 </div>
-<div class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-3 col-12">
-        <div class="footer__form">
-          <input type="text" placeholder="Имя" class="footer__form-input">
-          <input type="text" placeholder="Телефон" class="footer__form-input">
-          <button class="footer__form-btn">Оставить заявку</button>
-          <p class="footer__form-policy">
-            Нажав кнопку “Оставить заявку” вы даете согласие на <br>обработку Ваших персональных данных
-          </p>
-        </div>
-      </div>
-      <div class="col-xl-3 col-12 footer__contact-mob">
-        <div class="footer__contact">
-          <div class="footer__contact-title">
-            <p>Контакты</p>
-          </div>
-          <div class="footer__contact-info">
-            <a href="tel:88453488797">8 845 348 87 97</a>
-            <p>г.Москва, ул. Ковалева 13, к.1, оф. 300</p>
-            <a href="mailto:profkrovlya@mail.com">profkrovlya@mail.com</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-12 footer__menu-mob">
-        <div class="footer__menu">
-          <nav>
-            <a href="#">Каталог</a>
-            <a href="#">Покупателям</a>
-            <a href="#">Услуги</a>
-            <a href="#">Комплекс</a>
-            <a href="#">Акции</a>
-          </nav>
-        </div>
-      </div>
-      <div class="col-xl-3 col-12">
-        <div class="footer__copy">
-          <div class="footer__copy-logo">
-            <img src="img/logo.png" width="71" alt="">
-            <img src="img/logo2.png" alt="">
-            <a href="#"><img src="img/dev.png" alt=""></a>
-          </div>
-          <div class="footer__copy-policy">
-            <p>© 2020 Кровля профиль. Все права защищены. <br><a href="#">Политика конфиденциальности</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="up" style="opacity: 0">
-  <img src="img/up.png" alt="">
-</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
 </body>
 </html>

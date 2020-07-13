@@ -1,10 +1,343 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.bundle.css" />
 </head>
 <body>
+<div class="main main-minimal">
+    <div class="main__sh" id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="main__sh-form">
+                        <div class="form-wrapper">
+                            <div class="form-icon">
+                                <img src="img/glass-white.svg" alt="">
+                            </div>
+                            <div class="form-input">
+                                <input type="text" placeholder="Поиск">
+                            </div>
+                            <div class="form-btn">
+                                <button>Найти</button>
+                            </div>
+                        </div>
+                        <div class="form-close">
+                            <img src="img/close.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row d-none d-sm-flex main-header">
+            <div class="col-xl-auto">
+                <div class="main__logo">
+                    <a href=""><img src="img/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="main-hidden col-xl-5">
+                <div class="main__nav ">
+                    <nav>
+                        <a href="" class="main__nav-link">Каталог</a>
+                        <a href="" class="main__nav-link">Услуги</a>
+                        <a href="" class="main__nav-link">Акции</a>
+                        <a href="" class="main__nav-link">Покупателям</a>
+                        <a href="" class="main__nav-link">Комплекс</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="main-hidden col-xl-auto ml-auto">
+                <div class="main__search">
+                    <div class="main__search-btn">
+                        <img src="img/magnifying-glass.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="main-hidden col-xl-auto">
+                <div class="main__phone">
+                    <a href="">
+                        <div class="main__phone-block">
+                            <div class="block-img">
+                                <img src="img/telephone.svg" alt="">
+                            </div>
+                            <div class="block-text">
+                                <p class="vis">8 845 348 87 97</p>
+                                <p class="hover">Обратный звонок</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-hidden col-xl-auto">
+                <div class="main__cart">
+                    <div class="main__cart-button">
+                        <div class="button-price">
+                            11 200 ₽
+                        </div>
+                        <div class="button-img">
+                            <img src="img/supermarket.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="main__cartContent d-none">
+                    <div class="cartContent__close">
+                        <img src="img/close.svg" class="cartContent__close-btn" alt="">
+                    </div>
+                    <div class="cartContent__wrapper">
+                        <div class="cartContent__item">
+                            <div class="item-img">
+                                <a href=""><img src="img/image4.png" alt=""></a>
+                            </div>
+                            <div class="item-content">
+                                <p class="item-content__title">Профилированный лист Н-114х750 (ОЦ-01-БЦ-1)</p>
+                                <p class="item-content__price">624,75 ₽ / м<sup>2</sup></p>
+                            </div>
+                            <div class="item-count">
+                                <div class="count-min">-</div>
+                                <div class="count-num">12</div>
+                                <div class="count-max">+</div>
+                            </div>
+                            <div class="item-delete">
+                                <img src="img/cartDelete.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="cartContent__item">
+                            <div class="item-img">
+                                <a href=""><img src="img/image4.png" alt=""></a>
+                            </div>
+                            <div class="item-content">
+                                <p class="item-content__title">Профилированный лист Н-114х750 (ОЦ-01-БЦ-1)</p>
+                                <p class="item-content__price">624,75 ₽ / м2</p>
+                            </div>
+                            <div class="item-count">
+                                <div class="count-min">-</div>
+                                <div class="count-num">12</div>
+                                <div class="count-max">+</div>
+                            </div>
+                            <div class="item-delete">
+                                <img src="img/cartDelete.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartContent__bottom">
+                        <div class="bottom-price">
+                            <p>Итого: 11 319,15 ₽</p>
+                        </div>
+                        <div class="bottom-btn">
+                            <a href="">
+                                <button>Оформить заказ</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex d-sm-none main-header__mob">
+            <div class="col-6">
+                <div class="main__menu-mob">
+                    <img src="img/menu.png" class="main__menu-mob-btn" alt="">
+                </div>
+                <div class="main__logo-mob">
+                    <img src="img/logo.png" width="63" alt="">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="main__right">
+                    <div class="main__search-mob">
+                        <img src="img/glass.png" alt="">
+                    </div>
+                    <div class="main__card-mob">
+                        <img src="img/cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%= _.template(require('./../includes/MobileMenu.html').default)(data) %>
+</div>
+<div class="order">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li><a href="#" class="breadcrumbs__list-link">Главная</a></li>
+                        <li><a href="#" class="breadcrumbs__list-link">Каталог</a></li>
+                        <li><a href="#" class="breadcrumbs__list-link">Кровля</a></li>
+                        <li><a href="#" class="breadcrumbs__list-link">Металлочерепица</a></li>
+                        <li>МП Супермонтеррей (ПЭ-01-8017-0.4)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="order__cart">
+                    <div class="order__cart-list">
+                        <% for (let i = 0; i < 5; i++) { %>
+                        <div class="order__item">
+                            <div class="item-img">
+                                <a href=""><img src="img/image4.png" alt=""></a>
+                            </div>
+                            <div class="item-content">
+                                <p class="item-content__title">Профилированный лист Н-114х750 (ОЦ-01-БЦ-1)</p>
+                                <p class="item-content__price">624,75 ₽ / м<sup>2</sup></p>
+                            </div>
+                            <div class="item-count">
+                                <div class="count-min">-</div>
+                                <div class="count-num">12</div>
+                                <div class="count-max">+</div>
+                            </div>
+                            <div class="item-delete">
+                                <img src="img/cartDelete.svg" alt="">
+                            </div>
+                        </div>
+                        <% } %>
+                    </div>
+                    <div class="order__cart-link">
+                        <a href="catalog.html" class="link-catalog">
+                            <span class="link-catalog__img">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                <path d="M6.71794 3.27559C7.0083 2.98524 7.4654 2.98524 7.75575 3.27559C8.03629 3.55614 8.03629 4.02305 7.75575 4.30294L2.49348 9.5652L19.8582 9.56521C20.263 9.56521 20.5952 9.88695 20.5952 10.2917C20.5952 10.6965 20.263 11.0287 19.8582 11.0287L2.49348 11.0287L7.75575 16.2812C8.03629 16.5715 8.03629 17.0391 7.75575 17.319C7.4654 17.6093 7.00829 17.6093 6.71794 17.319L0.209916 10.811C-0.0706248 10.5304 -0.0706248 10.0635 0.209916 9.78362L6.71794 3.27559Z"
+                                      fill="#333333"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="20.5952" height="20.5952" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+
+                            </span>
+                            <span class="link-catalog__text">Продолжить покупки</span>
+                        </a>
+                        <a href="#" class="link-clear">
+                            <span class="link-clear__text">Очистить корзину</span>
+                            <span class="link-clear__img">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                <path d="M12.1207 6.88371C11.8749 6.88371 11.6758 7.0829 11.6758 7.32868V15.7385C11.6758 15.9841 11.8749 16.1835 12.1207 16.1835C12.3665 16.1835 12.5657 15.9841 12.5657 15.7385V7.32868C12.5657 7.0829 12.3665 6.88371 12.1207 6.88371Z" fill="#989898"/>
+                                <path d="M6.8701 6.88371C6.62433 6.88371 6.42514 7.0829 6.42514 7.32868V15.7385C6.42514 15.9841 6.62433 16.1835 6.8701 16.1835C7.11588 16.1835 7.31507 15.9841 7.31507 15.7385V7.32868C7.31507 7.0829 7.11588 6.88371 6.8701 6.88371Z" fill="#989898"/>
+                                <path d="M3.04331 5.65642V16.6194C3.04331 17.2674 3.28091 17.8759 3.69598 18.3125C4.10913 18.7503 4.68411 18.9989 5.28585 18.9999H13.7047C14.3066 18.9989 14.8816 18.7503 15.2946 18.3125C15.7096 17.8759 15.9472 17.2674 15.9472 16.6194V5.65642C16.7723 5.43742 17.307 4.64031 17.1966 3.79366C17.0861 2.94719 16.3649 2.31398 15.5111 2.31381H13.233V1.7576C13.2356 1.28987 13.0506 0.840735 12.7195 0.510315C12.3884 0.180069 11.9386 -0.00382648 11.4708 -2.5706e-06H7.51971C7.05198 -0.00382648 6.60215 0.180069 6.27103 0.510315C5.93991 0.840735 5.75498 1.28987 5.75758 1.7576V2.31381H3.47941C2.62563 2.31398 1.90448 2.94719 1.79393 3.79366C1.68356 4.64031 2.21821 5.43742 3.04331 5.65642ZM13.7047 18.11H5.28585C4.52507 18.11 3.93323 17.4565 3.93323 16.6194V5.69553H15.0573V16.6194C15.0573 17.4565 14.4655 18.11 13.7047 18.11ZM6.64751 1.7576C6.64456 1.52591 6.73563 1.30291 6.90006 1.13935C7.06432 0.975788 7.28784 0.885927 7.51971 0.889924H11.4708C11.7027 0.885927 11.9262 0.975788 12.0905 1.13935C12.2549 1.30273 12.346 1.52591 12.343 1.7576V2.31381H6.64751V1.7576ZM3.47941 3.20373H15.5111C15.9535 3.20373 16.3121 3.56231 16.3121 4.00467C16.3121 4.44702 15.9535 4.8056 15.5111 4.8056H3.47941C3.03705 4.8056 2.67847 4.44702 2.67847 4.00467C2.67847 3.56231 3.03705 3.20373 3.47941 3.20373Z" fill="#333333"/>
+                                <path d="M9.49541 6.88371C9.24964 6.88371 9.05045 7.0829 9.05045 7.32868V15.7385C9.05045 15.9841 9.24964 16.1835 9.49541 16.1835C9.74118 16.1835 9.94037 15.9841 9.94037 15.7385V7.32868C9.94037 7.0829 9.74118 6.88371 9.49541 6.88371Z" fill="#989898"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0">
+                                <rect width="19" height="19" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="order__form">
+                    <div class="order__form-title">
+                        <p>Оформление заказа</p>
+                    </div>
+                    <div class="order__form-type">
+                        <div class="type-list">
+                            <div class="type-item">
+                                <input type="radio" name="delivery" checked id="1" class="d-none">
+                                <label for="1">
+                                    <span></span>
+                                    <p>Доставка</p>
+                                </label>
+                            </div>
+                            <div class="type-item">
+                                <input type="radio" name="delivery" id="2" class="d-none">
+                                <label for="2">
+                                    <span></span>
+                                    <p>Самовывоз</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="type-text">
+                            <p>Не следует, однако забывать, что рамки и место обучения кадров способствует подготовки и реализации соответствующий условий активизации. Задача организации, в особенности же новая модель организационной деятельности.</p>
+                        </div>
+                    </div>
+                    <div class="order__form-delivery">
+                        <div class="delivery-title">
+                            <p>Адрес доставки</p>
+                        </div>
+                        <div class="delivery-inputs">
+                            <label>
+                                <input type="text" class="order-input" placeholder="Город">
+                            </label>
+                            <label>
+                                <input type="text" class="order-input" placeholder="Улица">
+                            </label>
+                            <label>
+                                <input type="text" class="order-input" placeholder="Дом">
+                            </label>
+                            <label>
+                                <input type="text" class="order-input" placeholder="Квартира">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="order__form-client">
+                        <div class="client-title">
+                            <p>Данные клиента</p>
+                        </div>
+                        <div class="client-inputs">
+                            <label>
+                                <input type="text" class="order-input" placeholder="Имя">
+                            </label>
+                            <label>
+                                <input type="text" class="order-input" placeholder="Телефон">
+                            </label>
+                            <label>
+                                <textarea placeholder="Комментарий_" class="order-textarea"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="order__form-pay">
+                        <div class="pay-title">
+                            <p>Способ оплаты</p>
+                        </div>
+                        <div class="pay-list">
+                            <div class="pay-item">
+                                <input type="radio" name="pay" checked id="3" class="d-none">
+                                <label for="3">
+                                    <span></span>
+                                    <p>Доставка</p>
+                                </label>
+                            </div>
+                            <div class="pay-item">
+                                <input type="radio" name="pay" id="4" class="d-none">
+                                <label for="4">
+                                    <span></span>
+                                    <p>Доставка</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__form-total">
+                        <div class="total-price">
+                            <p>Итого: 11 319,15 ₽ </p>
+                        </div>
+                        <div class="total-submit">
+                            <button>Оформить заказ</button>
+                            <p>Нажав кнопку “Оформить заказ” вы даете согласие на<br>обработку Ваших <a href="">персональных данных</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
 
 </body>
 </html>

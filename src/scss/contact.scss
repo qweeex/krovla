@@ -1,0 +1,128 @@
+.contact{
+  .breadcrumbs{
+    margin-top: 0;
+  }
+  &__top{
+    margin-top: 28px;
+    &-title{
+      width: 220px;
+      height: 180px;
+      background: #89AB42;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p{
+        font-size: 30px;
+        line-height: 37px;
+        /* identical to box height */
+        @include future;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+    }
+    &-phone{
+      padding-top: 31px;
+      .phone-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        color: #333333;
+      }
+      .phone-num{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        color: #333333;
+        margin-top: 3px;
+        display: block;
+      }
+      .phone-email{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #333333;
+        margin-top: 7px;
+        display: block;
+      }
+    }
+    &-time{
+      padding-top: 31px;
+      margin-left: -7px;
+      .time-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        color: #333333;
+      }
+      .time{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #333333;
+        padding-top: 7px;
+      }
+    }
+    &-info{
+      margin-top: 31px;
+      margin-left: -15px;
+      .info-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        color: #333333;
+      }
+      .info-item{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #333333;
+        padding-top: 7px;
+      }
+      .info-link{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #89AB42;
+        margin-top: 7px;
+        display: block;
+        img{
+          margin-left: 9px;
+        }
+      }
+    }
+    &-point{
+      margin-top: 30px;
+      margin-left: -22px;
+      .point-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        color: #333333;
+      }
+      .point-link{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #333333;
+        margin-top: 9px;
+        display: block
+      }
+    }
+    &-social{
+      margin-top: 30px;
+      margin-left: -30px;
+      .social-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        color: #333333;
+      }
+      .social-links{
+        margin-top: 8px;
+        a.social-link {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,10 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.bundle.css" />
 </head>
 <body>
+<div class="main main-minimal">
+    <div class="main__sh" id="search">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="main__sh-form">
+                        <div class="form-wrapper">
+                            <div class="form-icon">
+                                <img src="img/glass-white.svg" alt="">
+                            </div>
+                            <div class="form-input">
+                                <input type="text" placeholder="Поиск">
+                            </div>
+                            <div class="form-btn">
+                                <button>Найти</button>
+                            </div>
+                        </div>
+                        <div class="form-close">
+                            <img src="img/close.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row d-none d-sm-flex main-header">
+            <div class="col-xl-auto">
+                <div class="main__logo">
+                    <a href=""><img src="img/logo.png" alt=""></a>
+                </div>
+            </div>
+            <div class="main-hidden col-xl-5">
+                <div class="main__nav ">
+                    <nav>
+                        <a href="" class="main__nav-link">Каталог</a>
+                        <a href="" class="main__nav-link">Услуги</a>
+                        <a href="" class="main__nav-link">Акции</a>
+                        <a href="" class="main__nav-link">Покупателям</a>
+                        <a href="" class="main__nav-link">Комплекс</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="main-hidden col-xl-auto ml-auto">
+                <div class="main__search">
+                    <div class="main__search-btn">
+                        <img src="img/magnifying-glass.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="main-hidden col-xl-auto">
+                <div class="main__phone">
+                    <a href="">
+                        <div class="main__phone-block">
+                            <div class="block-img">
+                                <img src="img/telephone.svg" alt="">
+                            </div>
+                            <div class="block-text">
+                                <p class="vis">8 845 348 87 97</p>
+                                <p class="hover">Обратный звонок</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="main-hidden col-xl-auto">
+                <div class="main__cart">
+                    <div class="main__cart-button">
+                        <div class="button-price">
+                            11 200 ₽
+                        </div>
+                        <div class="button-img">
+                            <img src="img/supermarket.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="main__cartContent d-none">
+                    <div class="cartContent__close">
+                        <img src="img/close.svg" class="cartContent__close-btn" alt="">
+                    </div>
+                    <div class="cartContent__wrapper">
+                        <div class="cartContent__item">
+                            <div class="item-img">
+                                <a href=""><img src="img/image4.png" alt=""></a>
+                            </div>
+                            <div class="item-content">
+                                <p class="item-content__title">Профилированный лист Н-114х750 (ОЦ-01-БЦ-1)</p>
+                                <p class="item-content__price">624,75 ₽ / м<sup>2</sup></p>
+                            </div>
+                            <div class="item-count">
+                                <div class="count-min">-</div>
+                                <div class="count-num">12</div>
+                                <div class="count-max">+</div>
+                            </div>
+                            <div class="item-delete">
+                                <img src="img/cartDelete.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="cartContent__item">
+                            <div class="item-img">
+                                <a href=""><img src="img/image4.png" alt=""></a>
+                            </div>
+                            <div class="item-content">
+                                <p class="item-content__title">Профилированный лист Н-114х750 (ОЦ-01-БЦ-1)</p>
+                                <p class="item-content__price">624,75 ₽ / м2</p>
+                            </div>
+                            <div class="item-count">
+                                <div class="count-min">-</div>
+                                <div class="count-num">12</div>
+                                <div class="count-max">+</div>
+                            </div>
+                            <div class="item-delete">
+                                <img src="img/cartDelete.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartContent__bottom">
+                        <div class="bottom-price">
+                            <p>Итого: 11 319,15 ₽</p>
+                        </div>
+                        <div class="bottom-btn">
+                            <a href="">
+                                <button>Оформить заказ</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex d-sm-none main-header__mob">
+            <div class="col-6">
+                <div class="main__menu-mob">
+                    <img src="img/menu.png" class="main__menu-mob-btn" alt="">
+                </div>
+                <div class="main__logo-mob">
+                    <img src="img/logo.png" width="63" alt="">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="main__right">
+                    <div class="main__search-mob">
+                        <img src="img/glass.png" alt="">
+                    </div>
+                    <div class="main__card-mob">
+                        <img src="img/cart.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%= _.template(require('./../includes/MobileMenu.html').default)(data) %>
+</div>
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li><a href="#" class="breadcrumbs__list-link">Главная</a></li>
+                        <li><a href="#" class="breadcrumbs__list-link">Каталог</a></li>
+                        <li><a href="#" class="breadcrumbs__list-link">Кровля</a></li>
+                        <li><a href="#" class="breadcrumbs__list-link">Металлочерепица</a></li>
+                        <li>МП Супермонтеррей (ПЭ-01-8017-0.4)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row contact__top">
+            <div class="col-xl-2">
+                <div class="contact__top-title">
+                    <p>Контакты</p>
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="contact__top-phone">
+                    <p class="phone-title">Телефон:</p>
+                    <a href="tel:88453488797" class="phone-num">8 845 348 87 97</a>
+                    <a href="mailto:krovlyaprofil@mail.ru" class="phone-email">krovlyaprofil@mail.ru</a>
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="contact__top-time">
+                    <p class="time-title">Режим работы:</p>
+                    <p class="time">пн-пт: 10:00 - 19:00</p>
+                    <p class="time">сб-вскр: выходной</p>
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="contact__top-info">
+                    <p class="info-title">Реквизиты:</p>
+                    <p class="info-item">ИНН : 5047239058</p>
+                    <p class="info-item">КПП : 504701001</p>
+                    <a href="" class="info-link">
+                        Все реквизиты
+                        <img src="img/arrowLink.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="contact__top-point">
+                    <p class="point-title">Как добраться:</p>
+                    <a href="#" class="point-link">Схема проезда</a>
+                </div>
+            </div>
+            <div class="col-xl-2">
+                <div class="contact__top-social">
+                    <p class="social-title">Мы в соц. сетях:</p>
+                    <div class="social-links">
+                        <a href="" class="social-link">
+                            <img src="img/insta.png" alt="">
+                        </a>
+                        <a href="" class="social-link">
+                            <img src="img/vk.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
 
 </body>
 </html>

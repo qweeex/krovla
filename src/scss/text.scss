@@ -1,0 +1,42 @@
+.textPage{
+  .breadcrumbs{
+    margin-top: 0;
+  }
+  &__title{
+    margin-top: 105px;
+    p{
+      font-size: 38px;
+      line-height: 47px;
+      text-transform: uppercase;
+      color: #89AB42;
+      @include future;
+    }
+  }
+  &__desc{
+    margin-top: 28px;
+    p{
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      /* or 22px */
+      color: #333333;
+      padding-bottom: 22px;
+    }
+  }
+  &__img{
+    margin-top: 103px;
+    margin-left: 90px;
+    position: relative;
+    &-block{
+      width: 680px;
+      height: 721px;
+      display: block;
+      content: "";
+      background: #fff;
+      position: absolute;
+      right: -184px;
+      top: -55px;
+      z-index: -1;
+    }
+  }
+}

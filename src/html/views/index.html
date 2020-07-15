@@ -59,131 +59,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row d-none d-sm-flex main-header">
-      <div class="col-xl-auto">
-        <div class="main__logo">
-          <a href=""><img src="img/logo.png" alt=""></a>
-        </div>
-      </div>
-      <div class="main-hidden col-xl-5">
-        <div class="main__nav ">
-          <nav>
-            <a href="catalog.html" class="main__nav-link">Каталог</a>
-            <a href="services.html" class="main__nav-link">Услуги</a>
-            <a href="sale.html" class="main__nav-link">Акции</a>
-            <a href="text.html" class="main__nav-link">Покупателям</a>
-            <a href="text.html" class="main__nav-link">Комплекс</a>
-          </nav>
-        </div>
-      </div>
-      <div class="main-hidden col-xl-auto ml-auto">
-        <div class="main__search">
-          <div class="main__search-btn">
-            <img src="img/magnifying-glass.svg" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="main-hidden col-xl-auto">
-        <div class="main__phone">
-          <a href="">
-            <div class="main__phone-block">
-              <div class="block-img">
-                <img src="img/telephone.svg" alt="">
-              </div>
-              <div class="block-text">
-                <p class="vis">8 845 348 87 97</p>
-                <p class="hover">Обратный звонок</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="main-hidden col-xl-auto">
-        <div class="main__cart">
-          <div class="main__cart-button">
-            <div class="button-price">
-              11 200 ₽
-            </div>
-            <div class="button-img">
-              <img src="img/supermarket.svg" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="main__cartContent d-none">
-          <div class="cartContent__close">
-            <img src="img/close.svg" class="cartContent__close-btn" alt="">
-          </div>
-          <div class="cartContent__wrapper">
-            <div class="cartContent__item">
-              <div class="item-img">
-                <a href=""><img src="img/image4.png" alt=""></a>
-              </div>
-              <div class="item-content">
-                <p class="item-content__title">Профилированный лист Н-114х750 (ОЦ-01-БЦ-1)</p>
-                <p class="item-content__price">624,75 ₽ / м<sup>2</sup></p>
-              </div>
-              <div class="item-count">
-                <div class="count-min">-</div>
-                <div class="count-num">12</div>
-                <div class="count-max">+</div>
-              </div>
-              <div class="item-delete">
-                <img src="img/cartDelete.svg" alt="">
-              </div>
-            </div>
-            <div class="cartContent__item">
-              <div class="item-img">
-                <a href=""><img src="img/image4.png" alt=""></a>
-              </div>
-              <div class="item-content">
-                <p class="item-content__title">Профилированный лист Н-114х750 (ОЦ-01-БЦ-1)</p>
-                <p class="item-content__price">624,75 ₽ / м2</p>
-              </div>
-              <div class="item-count">
-                <div class="count-min">-</div>
-                <div class="count-num">12</div>
-                <div class="count-max">+</div>
-              </div>
-              <div class="item-delete">
-                <img src="img/cartDelete.svg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="cartContent__bottom">
-            <div class="bottom-price">
-              <p>Итого: 11 319,15 ₽</p>
-            </div>
-            <div class="bottom-btn">
-              <a href="">
-                <button>Оформить заказ</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row d-flex d-sm-none main-header__mob">
-      <div class="col-6">
-        <div class="main__menu-mob">
-          <img src="img/menu.png" class="main__menu-mob-btn" alt="">
-        </div>
-        <div class="main__logo-mob">
-          <img src="img/logo.png" width="63" alt="">
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="main__right">
-          <div class="main__search-mob">
-            <img src="img/glass.png" alt="">
-          </div>
-          <div class="main__card-mob">
-            <img src="img/cart.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <%= _.template(require('./../includes/header.html').default)(data) %>
   <div class="container">
     <div class="row">
       <div class="col-xl-auto ml-auto">
@@ -227,7 +103,7 @@
 <div class="catalog">
   <div class="container">
     <div class="row">
-      <div class="col-xl-12">
+      <div class="col-xl-12 col-sm-12">
         <div class="catalog__menu">
           <ul class="menu-list">
             <li>
@@ -299,7 +175,7 @@
       </div>
     </div>
     <div class="row catalog__row">
-      <div data-block="krovla" class="col-xl-4 col-12 catalog__col catalog__active">
+      <div data-block="krovla" class="col-xl-4 col-sm-4 col-12 catalog__col catalog__active">
         <div class="catalog__block">
           <div class="block__img">
             <svg id="block__img-1" width="66" height="23" viewBox="0 0 66 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -349,7 +225,7 @@
           </div>
         </div>
       </div>
-      <div data-block="fasad" class="col-xl-4 col-12 catalog__col">
+      <div data-block="fasad" class="col-xl-4 col-sm-4 col-12 catalog__col">
         <div class="catalog__block">
           <div class="block__img">
             <svg id="block__img-2" width="44" height="42" viewBox="0 0 44 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -387,7 +263,7 @@
           </div>
         </div>
       </div>
-      <div data-block="zabor" class="col-xl-4 col-12 catalog__col">
+      <div data-block="zabor" class="col-xl-4 col-sm-4 col-12 catalog__col">
         <div class="catalog__block">
           <div class="block__img">
             <svg id="block__img-3" width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -425,7 +301,7 @@
 <div class="availability">
   <div class="container">
     <div class="row">
-      <div class="col-xl-12">
+      <div class="col-xl-12 col-sm-12">
         <div class="availability__title">
           <p class="availability__title-text">Товары в наличии</p>
           <a href="" class="availability__title-link">
@@ -436,7 +312,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xl-5">
+      <div class="col-xl-5 col-sm-5">
         <div class="availability__slider swiper-aval">
           <div class="availability__slider-wrapper swiper-wrapper">
             <% for (let i = 0; i < 5; i++) { %>
@@ -503,7 +379,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-7 d-sm-flex d-none flex-column p-xl-0">
+      <div class="col-xl-7 col-sm-7 d-sm-flex d-none flex-column p-xl-0">
         <div class="availability__carousel availability-swiper swiper-container">
           <div class="carousel__wrapper swiper-wrapper">
             <% for (let i = 0; i < 5; i++) { %>
@@ -799,7 +675,7 @@
 <div class="about">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xl-4 offset-xl-1 col-12 about-bottom">
+      <div class="col-xl-4 col-sm-5 offset-xl-1  col-12 about-bottom">
         <div class="about__content">
           <div class="about__content-title">
             <p>о компании</p>
@@ -815,7 +691,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xl-7 col-12 about-top">
+      <div class="col-xl-7 col-sm-7 col-12 about-top">
         <div class="about__home">
           <div class="about__home-img">
             <img src="img/home.png" alt="">

@@ -1,13 +1,125 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link rel="stylesheet" href="css/style.bundle.css" />
-
-    <title><%=title%></title>
-  </head>
-  <body>
-    <header><img src="img/logo.svg" id="logo" /></header>
+<div class="container">
+  <div class="row d-none d-sm-flex main-header">
+    <div class="col-xl-auto col-sm-auto">
+      <div class="main__logo">
+        <a href=""><img src="img/logo.png" alt=""></a>
+      </div>
+    </div>
+    <div class="main-hidden col-xl-5 col-sm-5">
+      <div class="main__nav ">
+        <nav>
+          <a href="catalog.html" class="main__nav-link">Каталог</a>
+          <a href="services.html" class="main__nav-link">Услуги</a>
+          <a href="sale.html" class="main__nav-link">Акции</a>
+          <a href="text.html" class="main__nav-link">Покупателям</a>
+          <a href="text.html" class="main__nav-link">Комплекс</a>
+        </nav>
+      </div>
+    </div>
+    <div class="main-hidden col-xl-auto col-sm-auto ml-auto">
+      <div class="main__search">
+        <div class="main__search-btn">
+          <img src="img/magnifying-glass.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="main-hidden col-xl-auto col-sm-auto">
+      <div class="main__phone">
+        <a href="">
+          <div class="main__phone-block">
+            <div class="block-img">
+              <img src="img/telephone.svg" alt="">
+            </div>
+            <div class="block-text">
+              <p class="vis">8 845 348 87 97</p>
+              <p class="hover">Обратный звонок</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="main-hidden col-xl-auto col-sm-auto">
+      <div class="main__cart">
+        <div class="main__cart-button">
+          <div class="button-price">
+            11 200 ₽
+          </div>
+          <div class="button-img">
+            <img src="img/supermarket.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="main__cartContent d-none">
+        <div class="cartContent__close">
+          <img src="img/close.svg" class="cartContent__close-btn" alt="">
+        </div>
+        <div class="cartContent__wrapper">
+          <div class="cartContent__item">
+            <div class="item-img">
+              <a href=""><img src="img/image4.png" alt=""></a>
+            </div>
+            <div class="item-content">
+              <p class="item-content__title">Профилированный лист Н-114х750 (ОЦ-01-БЦ-1)</p>
+              <p class="item-content__price">624,75 ₽ / м<sup>2</sup></p>
+            </div>
+            <div class="item-count">
+              <div class="count-min">-</div>
+              <div class="count-num">12</div>
+              <div class="count-max">+</div>
+            </div>
+            <div class="item-delete">
+              <img src="img/cartDelete.svg" alt="">
+            </div>
+          </div>
+          <div class="cartContent__item">
+            <div class="item-img">
+              <a href=""><img src="img/image4.png" alt=""></a>
+            </div>
+            <div class="item-content">
+              <p class="item-content__title">Профилированный лист Н-114х750 (ОЦ-01-БЦ-1)</p>
+              <p class="item-content__price">624,75 ₽ / м2</p>
+            </div>
+            <div class="item-count">
+              <div class="count-min">-</div>
+              <div class="count-num">12</div>
+              <div class="count-max">+</div>
+            </div>
+            <div class="item-delete">
+              <img src="img/cartDelete.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="cartContent__bottom">
+          <div class="bottom-price">
+            <p>Итого: 11 319,15 ₽</p>
+          </div>
+          <div class="bottom-btn">
+            <a href="">
+              <button>Оформить заказ</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row d-flex d-sm-none main-header__mob">
+    <div class="col-6">
+      <div class="main__menu-mob">
+        <img src="img/menu.png" class="main__menu-mob-btn" alt="">
+      </div>
+      <div class="main__logo-mob">
+        <img src="img/logo.png" width="63" alt="">
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="main__right">
+        <div class="main__search-mob">
+          <img src="img/glass.png" alt="">
+        </div>
+        <div class="main__card-mob">
+          <img src="img/cart.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

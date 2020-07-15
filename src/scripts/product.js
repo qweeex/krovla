@@ -3,6 +3,14 @@ let carousel = new Swiper('.relationship-slider', {
     slidesPerView: 3,
     slidesPerColumn: 1,
     spaceBetween: 60,
+    breakpoints: {
+        320: {
+            slidesPerView: 1
+        },
+        1100: {
+            slidesPerView: 3
+        }
+    }
 });
 
 carousel.on('slideChange', () => {

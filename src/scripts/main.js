@@ -59,3 +59,11 @@ $('.up').click(function (e) {
     }, 400);
     return false;
 });
+$('.cat-mob').on('click', () => {
+
+    $('.catalogue__menu').addClass('show-catalog');
+
+});
+$('.close-btn').on('click', () => {
+    $('.catalogue__menu').removeClass('show-catalog');
+});

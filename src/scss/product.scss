@@ -276,3 +276,59 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .catalogue{
+    &__product{
+      img{
+        max-width: 100%;
+      }
+      &-slider{
+        width: 100%;
+      }
+      &-info{
+        padding-top: 35px;
+        padding-left: 0;
+        .info-title__text{
+          font-size: 22px;
+        }
+        .info-order__top{
+          flex-flow: row wrap;
+          .info-status{
+            width: 100%;
+          }
+          .info-price{
+            width: 100%;
+            margin-top: 5px;
+          }
+        }
+        .info-order__bottom{
+          flex-flow: row wrap;
+          margin-top: 10px;
+          .info-sale{
+            width: 100%;
+          }
+          .info-submit{
+            width: 100%;
+            margin-top: 10px;
+            .item-btn{
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    &__relationship{
+      margin-top: 50px;
+      .relationship-title{
+        p{
+          font-size: 22px;
+          padding-top: 20px;
+        }
+      }
+      .relationship-slider{
+        margin-top: 20px;
+      }
+    }
+  }
+}

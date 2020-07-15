@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.bundle.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=10975e0b-e96d-4e4d-a138-10097f1527a0" type="text/javascript"></script>
+    <script src="js/contact.js" defer></script>
 </head>
 <body>
 <div class="main main-minimal">
@@ -179,26 +181,26 @@
             </div>
         </div>
         <div class="row contact__top">
-            <div class="col-xl-2">
+            <div class="col-xl-2 col-6">
                 <div class="contact__top-title">
                     <p>Контакты</p>
                 </div>
             </div>
-            <div class="col-xl-2">
+            <div class="col-xl-2 col-6">
                 <div class="contact__top-phone">
                     <p class="phone-title">Телефон:</p>
                     <a href="tel:88453488797" class="phone-num">8 845 348 87 97</a>
                     <a href="mailto:krovlyaprofil@mail.ru" class="phone-email">krovlyaprofil@mail.ru</a>
                 </div>
             </div>
-            <div class="col-xl-2">
+            <div class="col-xl-2 col-6">
                 <div class="contact__top-time">
                     <p class="time-title">Режим работы:</p>
                     <p class="time">пн-пт: 10:00 - 19:00</p>
                     <p class="time">сб-вскр: выходной</p>
                 </div>
             </div>
-            <div class="col-xl-2">
+            <div class="col-xl-2 col-6">
                 <div class="contact__top-info">
                     <p class="info-title">Реквизиты:</p>
                     <p class="info-item">ИНН : 5047239058</p>
@@ -209,13 +211,13 @@
                     </a>
                 </div>
             </div>
-            <div class="col-xl-2">
+            <div class="col-xl-2 col-6">
                 <div class="contact__top-point">
                     <p class="point-title">Как добраться:</p>
                     <a href="#" class="point-link">Схема проезда</a>
                 </div>
             </div>
-            <div class="col-xl-2">
+            <div class="col-xl-2 col-6">
                 <div class="contact__top-social">
                     <p class="social-title">Мы в соц. сетях:</p>
                     <div class="social-links">
@@ -228,6 +230,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div id="contactMap" class="contact__map"></div>
         </div>
     </div>
 </div>

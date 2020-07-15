@@ -378,3 +378,78 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .order{
+    &__cart{
+      margin-top: 40px;
+      &-link{
+        .link-catalog{
+          &__text{
+            font-size: 12px;
+          }
+        }
+        .link-clear{
+          &__text{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    &__item{
+      align-items: flex-start;
+      padding-bottom: 8px;
+      .item-img{
+        width: 30%;
+      }
+      .item-content{
+        width: 70%;
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+      .item-count{
+
+      }
+    }
+    &__form{
+      margin-left: 0;
+      margin-right: -15px;
+      &-title{
+        padding-top: 31px;
+        padding-left: 31px;
+        p{
+          font-size: 28px;
+        }
+        &:after{
+          width: calc(100% - 64px);
+          left: 32px;
+        }
+      }
+      &-type{
+        padding-left: 31px;
+        .type-text{
+          padding-right: 15px;
+        }
+      }
+      &-delivery,
+      &-client{
+        padding-left: 31px;
+        padding-right: 30px;
+      }
+      &-pay{
+        padding-left: 32px;
+        padding-top: 15px;
+      }
+      &-total{
+        padding: 25px 31px 20px 31px;
+        flex-direction: column;
+        .total-submit{
+          margin-top: 10px;
+          p{
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}

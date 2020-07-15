@@ -1317,7 +1317,10 @@
   .catalog,
   .availability,
   .about,
-  .footer{
+  .footer,
+  .catalogue,
+  .order,
+  .contact{
     zoom: 0.835;
   }
 }
@@ -1332,7 +1335,10 @@
   .main,
   .catalog,
   .availability,
-  .footer{
+  .footer,
+  .catalogue,
+  .order,
+  .contact{
     zoom: 0.75;
   }
   .about{
@@ -1344,7 +1350,10 @@
   .main,
   .catalog,
   .availability,
-  .footer{
+  .footer,
+  .catalogue,
+  .order,
+  .contact{
     zoom: 0.715;
   }
   .about{
@@ -1356,7 +1365,10 @@
   .main,
   .catalog,
   .availability,
-  .footer{
+  .footer,
+  .catalogue,
+  .order,
+  .contact{
     zoom: 0.668;
   }
   .about{
@@ -1368,7 +1380,10 @@
   .main,
   .catalog,
   .availability,
-  .footer{
+  .footer,
+  .catalogue,
+  .order,
+  .contact{
     zoom: 1;
   }
   .about{
@@ -1397,6 +1412,12 @@
     }
     .mob-menu{
       display: flex;
+      &__content{
+        background: #fff;
+        .content-menu{
+          background: #fff;
+        }
+      }
     }
     &__bg{
       height: 100%;
@@ -1463,11 +1484,13 @@
         height: 100%;
         padding-left: 16px;
         padding-top: 14px;
-        flex: 0 0 55px
+        flex: 0 0 55px;
+        min-height: 473px;
       }
       &__content{
         background: #fff;
         flex: 1 1;
+        min-height: 473px;
         .content-phone{
           border-bottom: 1px solid #333333;
           text-align: right;

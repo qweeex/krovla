@@ -3,11 +3,8 @@
     margin-top: 0;
   }
   &__slider{
-    margin-left: 0;
-    margin-top: 6px;
-    margin-right: -6px;
     position: relative;
-    margin-bottom: 36px;
+    margin: 6px -6px 36px 0;
     &-right{
       display: flex;
       position: absolute;
@@ -277,6 +274,37 @@
           line-height: 20px;
           /* or 20px */
           color: #333333;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .sale{
+    &__slider{
+      margin-top: 0;
+      margin-right: 0;
+      width: 100%;
+      &-arrows{
+        right: 50px;
+        top: 7px;
+        .arrows-left{
+          margin-right: 9px;
+        }
+        svg{
+          width: 34px;
+          height: 35px;
+        }
+      }
+      &-right{
+        width: 42px;
+        height: 228px;
+        padding-bottom: 31px;
+        img{
+          width: 23px;
+        }
+        p{
+          font-size: 18px;
         }
       }
     }

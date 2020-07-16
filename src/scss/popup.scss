@@ -1,0 +1,104 @@
+.popup{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+  }
+  &-content{
+    max-width: 581px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    z-index: 15;
+    border-top-right-radius: 50px;
+    padding-bottom: 18px;
+    &__close{
+      position: absolute;
+      right: 38px;
+      top: 28px;
+      cursor: pointer;
+    }
+    &__top{
+      padding-top: 49px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #333333;
+      .title{
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+        @include future;
+        text-transform: uppercase;
+        color: #89AB42;
+
+      }
+      .desc{
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+        text-align: center;
+        color: #333333;
+      }
+    }
+    &__middle{
+      padding-top: 18px;
+      padding-bottom: 28px;
+      .middle-form{
+        max-width: 382px;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 auto;
+        label{
+          display: block;
+        }
+        label:nth-child(2n){
+          margin-left: auto;
+        }
+        &__input{
+          font-weight: 300;
+          font-size: 14px;
+          color: #464646;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          border: 0;
+          border-bottom: 1px solid #254E2F;
+          width: 172px;
+          line-height: 15px;
+          &::placeholder{
+            font-weight: 300;
+            font-size: 14px;
+            color: #464646;
+          }
+        }
+        &__select{
+          font-weight: 300;
+          font-size: 14px;
+          color: #464646;
+          padding-top: 8px;
+          padding-bottom: 4px;
+          border: 0;
+          border-bottom: 1px solid #254E2F;
+          width: 172px;
+          line-height: 16px;
+        }
+      }
+    }
+    &__bottom{
+      display: flex;
+      justify-content: center;
+      flex-flow: column wrap;
+      align-items: center;
+    }
+  }
+}

@@ -196,19 +196,44 @@
                             </div>
                             <div class="item-bottom">
                                 <ul>
-                                    <% for (let i = 0; i < 12; i++) { %>
+                                    <%
+                                    let arr = [
+                                    'металлочерепица',
+                                    'софит',
+                                    'водосточные системы',
+                                    'кровельная вентиляция',
+                                    'теплоизоляция',
+                                    'ремонтная эмаль',
+                                    'профилированный лист',
+                                    'стандартные элементы отделки',
+                                    'элементы безопасности кровли',
+                                    'гидро / пароизоляция',
+                                    'герметизирующие материалы',
+                                    'крепёж'
+                                    ];
+                                    %>
+                                    <% for (let i = 0; i < arr.length; i++) { %>
                                     <li>
-                                        <a href="" class="item-bottom__link">Металл</a>
+                                        <a href="" class="item-bottom__link"><%= arr[i] %></a>
                                     </li>
                                     <% } %>
                                 </ul>
                             </div>
                         </div>
-                        <% for (let i = 0; i < 6; i++) { %>
+                        <%
+                        let catalog = [
+                        'Фасады',
+                        'Заборы',
+                        'Водосток',
+                        'Элементы кровли',
+                        'Комплектующие'
+                        ];
+                        %>
+                        <% for (let i = 0; i < catalog.length; i++) { %>
                         <div class="menu-list__item">
                             <div class="item-top">
                                 <div class="item-top__title">
-                                    <p>Кровля</p>
+                                    <p><%= catalog[i] %></p>
                                 </div>
                                 <div class="item-top__more">
                                     <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -330,7 +355,7 @@
                             </div>
                             <div class="relationship-slider swiper-container">
                                 <div class="slider-wrapper swiper-wrapper">
-                                    <% for (let i = 0; i < 30; i++) { %>
+                                    <% for (let i = 0; i < 10; i++) { %>
                                     <div class="product__item swiper-slide">
                                         <div class="item-img">
                                             <a href="product.html"><img src="img/product1.png" alt=""></a>

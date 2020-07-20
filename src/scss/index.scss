@@ -1339,13 +1339,15 @@
   .catalog,
   .availability,
   .footer,
-  .catalogue,
   .order,
   .contact,
   .service,
   .textPage,
   .sale{
     zoom: 0.75;
+  }
+  .catalogue{
+    zoom: .84;
   }
   .about{
     zoom: 0.757;
@@ -1357,13 +1359,15 @@
   .catalog,
   .availability,
   .footer,
-  .catalogue,
   .order,
   .contact,
   .service,
   .textPage,
   .sale{
     zoom: 0.715;
+  }
+  .catalogue{
+    zoom: 0.82;
   }
   .about{
     zoom: 0.718;
@@ -1375,13 +1379,15 @@
   .catalog,
   .availability,
   .footer,
-  .catalogue,
   .order,
   .contact,
   .service,
   .textPage,
   .sale{
     zoom: 0.668;
+  }
+  .catalogue{
+    zoom: 0.78;
   }
   .about{
     zoom: 0.675;
@@ -1393,12 +1399,14 @@
   .catalog,
   .availability,
   .footer,
-  .catalogue,
   .order,
   .contact,
   .service,
   .textPage,
   .sale{
+    zoom: 1;
+  }
+  .catalogue{
     zoom: 1;
   }
   .about{

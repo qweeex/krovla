@@ -43,12 +43,14 @@ carousel.on('slideChange', () => {
 
 let scroll = $(".scrollbar").ionRangeSlider({
     skin: "round",
-    max: carousel.slides.length / (carousel.params.slidesPerView + carousel.params.slidesPerColumn),
+    //max: carousel.slides.length / (carousel.params.slidesPerView + carousel.params.slidesPerColumn),
+    max: Math.round((carousel.slides.length / 2) - 2),
     min: 0,
     from: 0,
     hide_min_max: true,
     hide_from_to: true,
-    onChange: function (item) {
+    onFinish: function (item) {
+        console.log(item.from)
         carousel.slideTo(item.from);
     }
 });

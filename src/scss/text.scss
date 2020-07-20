@@ -40,3 +40,24 @@
     }
   }
 }
+@media (max-width: 600px) {
+  .textPage{
+    &__title{
+      margin-top: 35px;
+      p{
+        font-size: 27px;
+        line-height: 1.5;
+      }
+    }
+    &__img{
+      margin-top: 0;
+      margin-left: 0;
+      img{
+        width: 100%;
+      }
+      &-block{
+        display: none;
+      }
+    }
+  }
+}

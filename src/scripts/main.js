@@ -67,3 +67,17 @@ $('.cat-mob').on('click', () => {
 $('.close-btn').on('click', () => {
     $('.catalogue__menu').removeClass('show-catalog');
 });
+
+$('.popup-content__close').on('click', () => {
+   $('.popup').addClass('d-none');
+});
+
+$('.main__phone-block, .catalog__menu-btn > button').on('click', (e) => {
+    e.preventDefault();
+    $('#callback').removeClass('d-none');
+});
+
+$('.block__more-btn').on('click', (e) => {
+    e.preventDefault();
+    $('#priceFence').removeClass('d-none');
+});

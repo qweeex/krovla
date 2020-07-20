@@ -21,13 +21,24 @@ carousel.on('slideChange', () => {
 
 let scroll = $(".sc").ionRangeSlider({
     skin: "round",
-    max: carousel.slides.length / (carousel.params.slidesPerView + carousel.params.slidesPerColumn),
+    max: carousel.slides.length - 3,
     min: 0,
     from: 0,
     hide_min_max: true,
     hide_from_to: true,
-    onChange: function (item) {
+    onFinish: function (item) {
         carousel.slideTo(item.from);
     }
 });
 let scrollData = scroll.data("ionRangeSlider");
+
+
+// Minimal price
+$('.info-sale__low').on('click', () => {
+   $('#specialPrice').removeClass('d-none');
+});
+
+// One click
+$('.info-sale__fast').on('click', () => {
+    $('#oneClick').removeClass('d-none');
+});

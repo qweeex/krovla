@@ -1,5 +1,25 @@
 .main-catalog.main{
   height: 573px;
+  .main__block-btn{
+    display: flex;
+    border: 1px solid #89ab42;
+    border-radius: 39px;
+    align-items: center;
+    transition: all .4s;
+    min-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #89ab42;
+    margin-left: 3px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 45px;
+    p{
+      padding-left: 15px;
+    }
+  }
 }
 .catalogue{
   &__menu{
@@ -31,6 +51,9 @@
       &__item{
         padding: 16px 24px 16px 61px;
         border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+        &:nth-last-child(1){
+          border-bottom: 0;
+        }
         .item-top{
           display: flex;
           align-items: center;
@@ -80,7 +103,7 @@
     margin: 0;
     li{
       font-weight: normal;
-      font-size: 12px;
+      font-size: 15px;
       line-height: 26px;
       color: #333333;
       padding-right: 14px;
@@ -104,11 +127,11 @@
     overflow: hidden;
   }
   &__item{
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 14px;
+    line-height: 15px;
     text-align: center;
-    color: rgba(51, 51, 51, 0.5);
-    padding: 5px 30px;
+    color: rgba(51,51,51,.5);
+    padding: 8px 36px;
     cursor: pointer;
     border-radius: 35px;
     transition: all 0.4s;
